@@ -1,0 +1,1 @@
+add_ghdl_target(hdl_dual_port_ram HDL_SOURCE dual_port_ram.vhdl)

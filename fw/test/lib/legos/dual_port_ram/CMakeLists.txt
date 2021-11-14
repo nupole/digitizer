@@ -1,0 +1,1 @@
+add_python_target(python_dual_port_ram SOURCE __init__.py)

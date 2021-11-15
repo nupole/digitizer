@@ -1,0 +1,1 @@
+add_python_target(python_event_encoder SOURCE __init__.py)

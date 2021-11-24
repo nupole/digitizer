@@ -1,0 +1,14 @@
+name: fw-ci
+on:
+  push
+jobs:
+  fw-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v2
+      - name: Build fw/all
+        run: |
+          cmake -GNinja -Bbuild
+          cmake --build build --target fw/all
+    container: nupole/hdl-tools:develop
